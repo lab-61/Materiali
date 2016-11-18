@@ -1,0 +1,443 @@
+<!doctype html>
+<html>
+	<head>
+        <title>Navigazione anonima</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/blood.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>Tor e navigazione anonima</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							## Chi può seguirci mentre navighiamo?
+
+							<p class="fragment" data-fragment-index="2">- I Provider Internet (ISP) <br></p>
+							<p class="fragment" data-fragment-index="1">
+								<img data-src="./img/tim.jpg"></p>
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## I Provider Internet (ISP)
+							<img data-src="./img/ispWired.jpg">
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## I Provider Internet (ISP)
+							 <i>”You know the way that advertising turned out to be the native business model for the internet? I think that <b>insurance is going to be the native business model</b> for the Internet of Things.”<br>
+								<u>Tim O’Reilly</u></i><br>
+							<img data-src="./img/timOReilly.jpg">
+						</script>
+					</section>
+				</section>
+
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							## Chi può seguirci mentre navighiamo?
+							- I Provider Internet (ISP)
+							- Gli hacker <br> <!-- .element: class="fragment" data-fragment-index="2" -->
+
+								<img data-src="./img/HT.jpg"> <!-- .element: class="fragment" data-fragment-index="1" -->
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							## Gli Hacker
+							<img data-src="./img/stampaHT.jpg">
+						</script>
+					</section>
+				</section>
+				<section data-markdown>
+					<script type="text/template">
+						## Chi può seguirci mentre navighiamo?
+						- I Provider Internet (ISP)
+						- Gli hacker
+						- Il datore di lavoro <br> <!-- .element: class="fragment" data-fragment-index="2" -->
+
+						<img data-src="./img/workBoss.jpg"> <!-- .element: class="fragment" data-fragment-index="1" -->
+					</script>
+				</section>
+				<section data-markdown data-background-image="./img/furto.gif">
+					<script type="text/template">
+						<p class="fragment" data-fragment-index="1" >
+							<label style="  color: #953b39;
+											text-decoration: underline;
+											font-size: 2em;
+											font-weight: bold;
+											text-transform: uppercase;"
+							>Spesso è meglio mantenere l'anonimato</label></p>
+					</script>
+				</section>
+				<section>
+				<section data-markdown>
+					<script type="text/template">
+					###Navigazione online
+					Cosa scriviamo
+
+					<img data-src="./img/wp-login.png"> <!-- .element: class="fragment" data-fragment-index="1" -->
+
+					</script>
+				</section>
+					<section data-markdown>
+						<script type="text/template">
+							###Navigazione online
+							Cosa scriviamo
+
+							 - Username <!-- .element: class="fragment" data-fragment-index="1" -->
+							 - Password <!-- .element: class="fragment" data-fragment-index="2" -->
+							 - Indirizzo di destinazione (es. www.mysite.com) <!-- .element: class="fragment" data-fragment-index="3" -->
+							 - IP di provenienza <!-- .element: class="fragment" data-fragment-index="4" -->
+
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown  data-transition="slide-in fade-out">
+						<script type="text/template">
+							### Chi ci segue?
+
+							<img data-src="./img/tor-https-0-clean.png"> <!-- .element: class="fragment fade-in" data-fragment-index="1" -->
+
+						</script>
+					</section>
+					<section data-markdown  data-transition="fade-in fade-out">
+						<script type="text/template">
+							### Chi ci segue?
+
+							<img data-src="./img/tor-https-0-hacker.png"/>
+						</script>
+					</section>
+					<section data-markdown  data-transition="fade-in fade-out">
+						<script type="text/template">
+							### Chi ci segue?
+
+							<img data-src="./img/tor-https-0-ISP.png"/>
+						</script>
+					</section>
+					<section data-markdown  data-transition="fade-in fade-out">
+						<script type="text/template">
+							### Chi ci segue?
+
+							<img data-src="./img/tor-https-0-site.png"/>
+						</script>
+					</section>
+					<section data-markdown  data-transition="fade-in fade-out">
+						<script type="text/template">
+							### Chi ci segue?
+
+							<img data-src="./img/tor-https-0.png"/>
+						</script>
+					</section>
+				</section>
+                <section data-markdown>
+                    <script type="text/template">
+                    ### Nella realtà
+
+                    <img data-src="./img/megafono.gif" class="fragment" data-fragment-index="1"/>
+                    </script>
+                </section>
+                <section>
+                <section data-markdown>
+                    <script type="text/template">
+                        #Https
+
+                        <img data-src="./img/https.png" class="fragment" data-fragment-index="1"/>
+                    </script>
+                </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            #Https
+                            ###Cosa nasconde?
+                            - i dati contenuti nel messaggio  <!-- .element: class="fragment fade-in" data-fragment-index="1"  -->
+
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            #Https
+                            ###Chi li può vedere?
+                            - Noi  <!-- .element: class="fragment fade-in" data-fragment-index="1"  -->
+                            - Il sito che visitiamo  <!-- .element: class="fragment fade-in" data-fragment-index="2"  -->
+
+                        </script>
+                    </section>
+                </section>
+                <section>
+                    <section data-markdown  data-transition="slide-in fade-out">
+                        <script type="text/template">
+                            ### Chi ci segue?
+
+                            <img data-src="./img/tor-https-1-clean.png"> <!-- .element: class="fragment fade-in" data-fragment-index="1" -->
+
+                        </script>
+                    </section>
+                    <section data-markdown  data-transition="fade-in fade-out">
+                        <script type="text/template">
+                            ### Chi ci segue?
+
+                            <img data-src="./img/tor-https-1-semi-clean.png"/>
+                        </script>
+                    </section>
+                    <section data-markdown  data-transition="fade-in fade-out">
+                        <script type="text/template">
+                            ### Chi ci segue?
+
+                            <img data-src="./img/tor-https-1.png"/>
+                        </script>
+                    </section>
+
+                </section>
+				<section data-markdown>
+                    <script type="text/template">
+                        ### Come proteggerci
+
+                        <img data-src="./img/destroyPC.gif" class="fragment" data-fragment-index="1"/>
+                    </script>
+				</section>
+				<section data-background="./img/Tor.png"  data-transition-speed="slow" data-background-size = "50%" data-background-color="white" data-background-transition="zoom" >
+				</section>
+				<section>
+					Tor is <span class="fragment highlight-red">free software</span> for enabling <span class="fragment highlight-red">anonymous communication</span>. (...) Tor directs Internet traffic through a free, worldwide, volunteer network consisting of more than seven thousand relays to conceal a user's location and usage from anyone conducting network surveillance or traffic analysis.
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+						##Come funziona?
+
+						Tor funziona con un sistema di crittografia detto "crittografia a cipolla"
+						<p class="fragment" data-fragment-index="1">Ma cosa vuol dire?</p>
+						</script>
+					</section>
+					<section data-background-video="./vid/shrek.mp4">
+						<!--<video>-->
+							<!--<source data-src="./vid/shrek.mp4" data-type="video/mp4"/>-->
+						<!--</video>-->
+					</section>
+					<section data-background="./img/shrek.jpg"  data-transition-speed="slow" data-background-size = "70%"  data-background-transition="silde in" >
+						<h2>Crittografia a strati</h2>
+						<p class="fragment fade-up" data-fragment-index="1" style="background-color: rgba(0, 0, 0, 0.6)">Il funzionamento della rete Tor è concettualmente semplice: i dati che appartengono ad una qualsiasi comunicazione non transitano direttamente dal client al server, ma passano attraverso i server Tor che agiscono da router costruendo un circuito virtuale crittografato a strati (per analogia con onion, che in inglese significa cipolla).</p>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							##Cosa succede
+							<img data-src="./img/cassaforti.jpg"/>
+						</script>
+					</section>
+					<section data-markdown >
+						<script type="text/template">
+							##Cosa succede
+							<img data-src="./img/onion.png"/>
+						</script>
+					</section>
+					<section data-markdown >
+						<script type="text/template">
+							##Cosa succede
+							<img data-src="./img/rete_tor.png"/>
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown  data-transition="slide-in fade-out">
+						<script type="text/template">
+							###Come cambia il traffico?
+							<img data-src="./img/tor-https-3-clean.jpg"> <!-- .element: class="fragment fade-in" data-fragment-index="1" -->
+						</script>
+					</section>
+					<section data-markdown  data-transition="fade-in fade-out">
+						<script type="text/template">
+							###Come cambia il traffico?
+							<img data-src="./img/tor-https-3-hidden.png"/>
+						</script>
+					</section>
+					<section data-markdown  data-transition="fade-in fade-out">
+						<script type="text/template">
+							###Come cambia il traffico?
+							<img data-src="./img/tor-https-3-relay.png"/>
+						</script>
+					</section>
+					<section data-markdown  data-transition="fade-in fade-out">
+						<script type="text/template">
+							###Come cambia il traffico?
+							<img data-src="./img/tor-https-3-site.png"/>
+						</script>
+					</section>
+                    <section data-markdown  data-transition="fade-in fade-out">
+                        <script type="text/template">
+                            ###Come cambia il traffico?
+                            <img data-src="./img/tor-https-3.png"/>
+                        </script>
+                    </section>
+					<section data-markdown  data-transition="fade-in fade-out">
+						<script type="text/template">
+							###Come cambia il traffico?
+							<img data-src="./img/tor-https-2.png"/>
+						</script>
+					</section>
+				</section>
+                <section>
+                    <section data-markdown>
+                        <script type="text/template">
+                        ##Rete Tor
+                        Un messaggio sulla rete tor può
+                        - uscire dalla rete <!-- .element: class="fragment fade-in" data-fragment-index="1" --> <i>andando per esempio su Gmail</i> <!-- .element: class="fragment fade-in" data-fragment-index="1" -->
+                        - rimanere sulla rete tor <!-- .element: class="fragment fade-in" data-fragment-index="2" -->
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ##Rete Tor
+                            Il cosidetto Deep Web
+                            - indirizzi <!-- .element: class="fragment fade-in" data-fragment-index="1" --> <i>.onion</i> <!-- .element: class="fragment fade-in" data-fragment-index="1" -->
+                            - non indicizzati dai motori di ricerca <!-- .element: class="fragment fade-in" data-fragment-index="2" -->
+                            - garantiscono l'anonimato anche del server <!-- .element: class="fragment fade-in" data-fragment-index="3" -->
+                        </script>
+                    </section>
+                </section>
+                <section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ##Accedere a TOR
+                            Per accedere a TOR bisogna scricare "Tor browser"
+                            - è una particolare versione di Firefox <!-- .element: class="fragment fade-in" data-fragment-index="1" -->
+                            <img data-src="./img/tor-browser.png" class="fragment fade-up" data-fragment-index="2">
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ##Accedere a TOR
+                            Per accedere a un sito
+                            - dobbiamo conoscerne l'indirizzo <!-- .element: class="fragment fade-in" data-fragment-index="1" --> <i>.onion</i> <!-- .element: class="fragment fade-in" data-fragment-index="1" -->
+                            - un comune punt d'accesso è la hidden wiki, una raccolta di link a servizi su tor <!-- .element: class="fragment fade-in" data-fragment-index="2" -->
+                            <img data-src="./img/hidden-wiki.jpg" class="fragment fade-up" data-fragment-index="2">
+                        </script>
+                    </section>
+                </section>
+                <section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ##Si ma chissà cosa c'è dietro....
+                            “The design of the Tor system is structured in such a way that even if the US Government wanted to subvert it, it couldn’t because it’s a decentralized authority. It’s a volunteer based network. Nobody’s getting paid to run Tor relays – they’re volunteers worldwide. And because of this, it provides a built-in structural defense against abuses and most types of adversaries.”
+                            <br><i><b>Edward Snowden</b> FBI most wanted</i> <!-- .element: class="fragment fade-in" data-fragment-index="1" -->
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ##Si ma chissà cosa c'è dietro....
+                            <img data-src="./img/nsaVStor.jpg" >
+                        </script>
+                    </section>
+                    <section data-markdown>
+                        <script type="text/template">
+                            ##Si ma chissà cosa c'è dietro....
+                            - Il fatto che l'NSA ci stia provando vuol dire che non è facile <!-- .element: class="fragment fade-in" data-fragment-index="1" -->
+                            - “They went for a browser exploit, meaning they can not break the Tor protocol.” <!-- .element: class="fragment fade-in" data-fragment-index="2" -->
+                        </script>
+                    </section>
+                </section>
+                <section>
+                <section data-markdown>
+                    <script type="text/template">
+                        ### Quindi siamo al sicuro
+
+                        <img data-src="./img/wrong.gif" class="fragment" data-fragment-index="1"/>
+                    </script>
+                </section>
+
+                    <section data-markdown>
+                        ##Gli strumenti sono utili quando si usano bene!
+                    </section>
+                </section>
+                <section>
+                    <section data-markdown data-transition="fade-out">
+                        <script type="text/template">
+                            <img data-src="./img/tor-https-3.png"/>
+
+                        </script>
+                    </section>
+                    <section data-markdown data-transition="fade-in">
+                        <script type="text/template">
+                            <img data-src="./img/tor-https-3-warn.png"/>
+                        </script>
+                    </section>
+                </section>
+                <section>
+                    <section data-markdown data-transition="fade-out">
+                        <script type="text/template">
+                            #Attenzione
+                            - il sito che visitiamo legge il contenuto del messaggio!
+                            <img data-src="./img/facebook-logo.png" class="fragment plain " style="width: 30%; background-color: transparent;" data-fragment-index="1"/><img data-src="./img/google.png"   class="fragment plain " style="width: 30%; background-color: transparent;" data-fragment-index="1"/><img data-src="./img/hotmail.png"  class="fragment plain " style="width: 30%; background-color: transparent;" data-fragment-index="1"/>
+                        </script>
+                    </section>
+                    <section data-markdown data-transition="fade-in">
+                        <script type="text/template">
+                            #Attenzione
+                            - Se ci autentichiamo su un sito, ci rendiamo riconoscibili, rendendo quindi inutile il lavoro di TOR.
+                        </script>
+                    </section>
+                    <section data-markdown data-transition="fade-in">
+                        <script type="text/template">
+                            #Attenzione
+                            - Alcuni programmi contengono vulnerabilità tali da invalidare la protezione <!-- .element: class="fragment fade-in" data-fragment-index="1" -->
+                            <br> <img data-src="./img/Flash-Player.png" class="fragment plain " style="width: 15%; background-color: transparent;" data-fragment-index="2"/><img data-src="./img/windows-logo.png" class="fragment plain " style="width: 15%; background-color: transparent;" data-fragment-index="2"/>
+                            - Una password debole è debole ovunque! <!-- .element: class="fragment fade-in" data-fragment-index="3" -->
+                        </script>
+                    </section>
+                </section>
+                <section>
+                    <section data-markdown data-transition-speed="slow" data-background-color="white" data-transition="zoom">
+                        <script type="text/template">
+                            #The End!
+                            Link utili
+                            - //torproject
+                            - http://lab61.info
+                            <br>
+                            <img data-src="./img/minion1.gif" class="fragment plain" data-fragment-index="1"/><img data-src="./img/minion2.gif" class="fragment plain" data-fragment-index="1"/><img data-src="./img/minion3.gif" class="fragment plain" data-fragment-index="1"/>
+                        </script>
+                    </section>
+                </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
